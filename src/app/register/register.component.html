@@ -1,0 +1,21 @@
+<div class="filler d-flex justify-content-center">
+    <div class="section_3 d-flex">
+      <form class="form" (ngSubmit)="register()">
+        <h2>Please Register and Enjoy </h2>
+        <div class="form_1 d-flex justify-content-center align-items-center">
+          <input type="text" id="name" name="name" placeholder="Name" [(ngModel)]="user.name" required>
+        </div>
+        <div class="form_1 d-flex justify-content-center align-items-center">
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name" [(ngModel)]="user.lastName" required>
+        </div>
+        <div class="form_2 d-flex justify-content-center align-items-center">
+          <input type="email" id="email" name="email" placeholder="Email" [(ngModel)]="user.email" required>
+        </div>
+        <div class="form_1 d-flex justify-content-center align-items-center">
+          <input type="password" id="password" name="password" placeholder="Password" [(ngModel)]="user.password" required>
+        </div>
+        <button type="submit" class="form_submit">Register</button>
+      </form>
+    </div>
+  </div>
+  
